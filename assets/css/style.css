@@ -1,11 +1,55 @@
+:root {
+    --navbar-primary: black;
+}
+
 html, body {
     background: radial-gradient(circle, rgba(62,78,156,1) 0%, rgba(105,19,36,1) 100%);
     color: white;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25vh 0 0.25vh 0;
+    border: 0;
+    margin: 0 0 1vh 0;
+    min-height: max(4vh, 2rem);
+    background-color: var(--navbar-primary);
+    border-bottom: 0.25vh solid #ffffff;
 }
 
 h1 {
     color:gold;
     text-align: center;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+main {
+    min-height: 87vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 3vw 2vh 3vw;
+    background-color: beige;
+    color: black;
+    border: 0.25rem solid white;
+    border-radius: 1rem;
+}
+
+article h2 {
+    padding: 0.25rem;
+    margin: 0.25rem;
 }
 
 #links {
@@ -13,7 +57,6 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-
     width: 100%;
 }
 
@@ -35,6 +78,7 @@ h1 {
     padding: 0.25rem;
     flex-grow: 0;
     text-decoration: none;
+    margin: 0.5vh 0.5vw
 
 }
 
@@ -54,30 +98,6 @@ h1 {
     text-wrap: wrap;
     padding: 0rem;
     border: 0rem;
-}
-
-#github {
-    background-color: white;
-    color: #24292e;
-    border-color: #24292e;
-}
-
-#linkedin {
-    background-color: white;
-    color: #0a66c2;
-    border-color: #0a66c2;
-}
-
-#facebook {
-    background-color: white;
-    color: #1877F2;
-    border-color: #1877F2;
-}
-
-#x-twitter {
-    color: white;
-    background-color: black;
-    border-color: white;
 }
 
 #css3-alt {
@@ -102,4 +122,61 @@ h1 {
     background-color: #eeeeee;
     color: #555555;
     border-color: #555555;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    min-height: max(4vh, 2rem);
+    background-color: var(--navbar-primary);
+    padding: 0;
+    border: 0;
+    border-top: #ffffff 0.25vh solid;
+    margin: 0.25vh, 0, 0, 0;
+}
+
+#social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.social-card {
+    flex: 1;
+    width: 1rem;
+    height: 1rem;
+    border: 0.05rem;
+    border-color: purple;
+    border-radius: 1rem;
+    border-style: solid;
+    padding: 0.25rem;
+    flex-grow: 0;
+    text-decoration: none;
+
+}
+
+#github {
+    background-color: white;
+    color: #24292e;
+    border-color: #24292e;
+}
+
+#linkedin {
+    background-color: white;
+    color: #0a66c2;
+    border-color: #0a66c2;
+}
+
+#facebook {
+    background-color: white;
+    color: #1877F2;
+    border-color: #1877F2;
+}
+
+#x-twitter {
+    color: white;
+    background-color: black;
+    border-color: white;
 }
